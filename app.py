@@ -71,5 +71,17 @@ else:
     os.system(f"wget -q {os.getenv('MODEL_LINK')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('MODEL_NAME')}")
     os.system(f"wget -q {os.getenv('VAE_LINK')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('VAE_NAME')}")
     os.system(f"wget -q {os.getenv('YAML_LINK')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('YAML_NAME')}")
+    os.system(f"wget -q {os.getenv('EMBED_LINK')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('EMBED_NAME')}")
+
+    os.system(f"wget -q {os.getenv('EMBED_LINK1')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('EMBED_NAME1')}")
+    os.system(f"wget -q {os.getenv('EMBED_LINK2')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('EMBED_NAME2')}")
+    os.system(f"wget -q {os.getenv('EMBED_LINK3')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('EMBED_NAME3')}")
+    os.system(f"wget -q {os.getenv('EMBED_LINK4')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('EMBED_NAME4')}")
+
+    os.system(f"wget -q {os.getenv('MODEL_LINK1')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('MODEL_NAME1')}")
+    os.system(f"wget -q {os.getenv('MODEL_LINK2')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('MODEL_NAME2')}")
+    os.system(f"wget -q {os.getenv('MODEL_LINK3')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('MODEL_NAME3')}")
+    os.system(f"wget -q {os.getenv('MODEL_LINK4')} -O /home/user/app/stable-diffusion-webui/models/Stable-diffusion/{os.getenv('MODEL_NAME4')}")
+
     
     os.system(f"python launch.py --force-enable-xformers --ui-config-file /home/user/app/ui-config.json --ui-settings-file /home/user/app/config.json --disable-console-progressbars --enable-console-prompts --cors-allow-origins huggingface.co,hf.space --no-progressbar-hiding --api --skip-torch-cuda-test")
